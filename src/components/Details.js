@@ -11,7 +11,7 @@ const StlyedDetail = styled.div`
 
 
 const Details = props => {
-    const { charId, close, char } = props
+    const { charId, close } = props
     const [details, setDetails] = useState(null)
     
     useEffect(() => {

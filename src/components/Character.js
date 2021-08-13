@@ -1,7 +1,6 @@
 // Write your Character component here
 import React from 'react'
 import styled from 'styled-components';
-import Details from './Details';
 
 
 const StyledMainDiv = styled.div`
@@ -35,7 +34,7 @@ const StyledChar= styled.div`
 
 
 const Character = props => {
-    const { char, openDetails, close } = props
+    const { char, openDetails } = props
 
  
     return (

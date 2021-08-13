@@ -81,6 +81,23 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+  React was created because Facebook had the need to build something that could make their user experience in a away that wasn't concenered when and where data was recieved. React creates better user interfaces with reusable components that change when data is changed. React solves problems for dynamic data for a faster response time. It lets you design things easier. Using react components and passing data via props allows you to build bigger applications and gives you the ability to split your app into smaller pieces so that its easier to work on and maintain. 
+
 1. Describe component state.
+
+  A component state is one that holds state data. When data comes into our application it is loaded and stored on state. It is stored in two ways, in a centralized component specifically for state managment, or a component reendering other components. 
+
 1. Describe props.
+
+  Props, short for properties, are used when we want to pass information held on state inside one component to another component. 
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Side effects are anything that affects something outside of the scope of the current function that's being executed. For example:
+
+useEffect(() => {
+
+}, [ ])
+
+Now the useEffect will run when the component recieves new props or state, when the component re-renders, and when the component first mounts.  
