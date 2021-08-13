@@ -3,6 +3,17 @@ import './App.css';
 import axios from 'axios'
 import Character from './components/Character';
 import Details from './components/Details';
+import styled from 'styled-components';
+
+
+
+
+const StyledMain = styled.div`
+  text-align: center;
+`;
+
+
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -36,7 +47,7 @@ const App = () => {
 
   
   return (
-    <div className="App">
+    <StyledMain className="App">
       <h1 className="Header">Characters</h1>
         {
           char.map((charObj, index) => {
@@ -51,7 +62,7 @@ const App = () => {
         {
             currentCharId && <Details charId={currentCharId} close={closeDetails} />
         }
-    </div>
+    </StyledMain>
   );
 }
 
