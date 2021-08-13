@@ -3,13 +3,10 @@ import React from 'react'
 import styled from 'styled-components';
 
 
-const StyledMainDiv = styled.div`
-
-`;
 const StyledChar= styled.div`
-    width: 50%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 4px 0 4px 0;
     padding: 8px;
@@ -30,15 +27,12 @@ const StyledChar= styled.div`
       }
 `;
 
-
-
-
 const Character = props => {
     const { char, openDetails } = props
 
  
     return (
-        <StyledMainDiv>
+        <div>
             <StyledChar>
                 {char.name}
                
@@ -46,7 +40,7 @@ const Character = props => {
             
             </StyledChar>
 
-        </StyledMainDiv>
+        </div>
         
     )
 }
