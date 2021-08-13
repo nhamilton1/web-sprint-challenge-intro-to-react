@@ -38,7 +38,6 @@ const App = () => {
     axios.get(`https://swapi.dev/api/people`)
       .then(res => {
         setChar(res.data)
-        
       })
       .catch(err => {
         console.error(err)
@@ -48,7 +47,7 @@ const App = () => {
   
   return (
     <StyledMain className="App">
-      <h1 className="Header">Characters</h1>
+      <h1 className="Header">Star Wars Characters</h1>
         {
           char.map((charObj, index) => {
             return <Character 
@@ -60,7 +59,10 @@ const App = () => {
           })
         }
         {
-            currentCharId && <Details charId={currentCharId} close={closeDetails} />
+            currentCharId && <Details 
+                              charId={char} 
+                              close={closeDetails} 
+                              />
         }
     </StyledMain>
   );
